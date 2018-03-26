@@ -1,5 +1,5 @@
 # go-safetemp
-[![Godoc](https://godoc.org/github.com/hashcorp/go-tempdir?status.svg)](https://godoc.org/github.com/hashicorp/go-tempdir)
+[![Godoc](https://godoc.org/github.com/hashcorp/go-safetemp?status.svg)](https://godoc.org/github.com/hashicorp/go-safetemp)
 
 Functions for safely working with temporary directories and files.
 
