@@ -5,7 +5,6 @@ package safetemp
 
 import (
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 )
@@ -26,7 +25,7 @@ import (
 // be nil).
 func Dir(dir, prefix string) (string, io.Closer, error) {
 	// Create the temporary directory
-	td, err := ioutil.TempDir(dir, prefix)
+	td, err := os.MkdirTemp(dir, prefix)
 	if err != nil {
 		return "", nil, err
 	}
